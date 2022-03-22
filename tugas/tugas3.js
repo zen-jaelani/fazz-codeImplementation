@@ -17,13 +17,13 @@ function fazzFood(harga, voucher, jarak, pajak) {
 function cekDiskon(harga, voucher) {
     let diskon = 0;
     if (voucher === "FAZZFOOD50" && harga >= 50000) {
-        diskon = harga - 0.5 * harga;
+        diskon = 0.5 * harga;
         diskon =
             diskon > 50000
                 ? 50000
                 : diskon;
     } else if (voucher === "DITRAKTIR60" && harga >= 25000) {
-        diskon = harga - 0.6 * harga;
+        diskon = 0.6 * harga;
         diskon =
             diskon > 30000
                 ? 30000
